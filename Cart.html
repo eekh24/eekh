@@ -556,10 +556,8 @@
                                     //             referralAmount: walletAmount
                                     //         });
                                 } else if (walletAmount <= totalAmountOneFourth) {
-                                    totalAmount = totalAmountOneFourth;
-                                    console.log(totalAmountOneFourth) // Deduct the entire wallet amount from the total
+                                    totalAmount -= walletAmount; // Deduct the entire wallet amount from the total
                                     walletAmount = 0; // Wallet is now empty
-                                    console.log('Hi') // Wallet is now empty
                                     //  await updateDoc(walletRef, {
                                     //      referralAmount: walletAmount
                                     //  });
